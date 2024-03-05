@@ -28,13 +28,13 @@ const config: Config = {
       keyframes: {
         open: {
           "0%": {
-            opacity: 1,
+            opacity: "1",
             transform: "translateX(100%)",
           },
         },
         close: {
           to: {
-            opacity: 0,
+            opacity: "0",
             transform: "translateX(100%)",
           },
         },
@@ -59,3 +59,6 @@ const config: Config = {
   plugins: [],
 };
 export default config;
+
+// Ref :: https://twitter.com/steventey/status/1677339375645126659
+// Ref :: https://tailwindcss.com/docs/customizing-colors#using-css-variables
