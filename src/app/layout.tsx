@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Providers } from "@/lib/providers";
@@ -17,27 +17,26 @@ export const metadata: Metadata = {
   description,
   keywords: ["Frontend Developer", "React Developer", "Next.js Developer"],
   creator: "Mahfudin Fudi",
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "white" },
-    { media: "(prefers-color-scheme: dark)", color: "black" },
-  ],
   openGraph: {
     type: "website",
     url,
     title,
     description,
     siteName: title,
-    images: [
-      {
-        url: "/images/open-graph-fudi.png",
-      },
-    ],
+    images: "/images/open-graph-fudi.png",
   },
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon-16x16.png",
     apple: "/apple-touch-icon.png",
   },
+};
+
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "white" },
+    { media: "(prefers-color-scheme: dark)", color: "black" },
+  ],
 };
 
 export default function RootLayout({

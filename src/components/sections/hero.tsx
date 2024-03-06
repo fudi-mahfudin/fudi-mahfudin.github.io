@@ -1,10 +1,9 @@
 import Image from "next/image";
-import Container from "../layout/container";
-
-import FudiHeadshot from "/public/images/fudi-headshot.jpg";
-import Typography from "../general/typography";
 import { MapPin } from "lucide-react";
+import Container from "../layout/container";
+import Typography from "../general/typography";
 import SocialIcons from "../data-display/social-icons";
+import FudiHeadshot from "/public/images/fudi-headshot.jpg";
 
 const HeroSection = () => {
   return (
@@ -18,6 +17,7 @@ const HeroSection = () => {
               alt="Headshot of Fudi"
               className="absolute z-10 h-[280px] w-[240px] border-8 border-gray max-md-:left-5 md:left-0 md:top-0 md:h-[320px] md:w-[280px]"
               style={{ objectFit: "cover" }}
+              priority
             />
             <div className="absolute h-[280px] w-[280px] border-8 border-transparent bg-gray-200 max-md:top-5 md:bottom-0 md:right-0 md:h-[320px] md:w-[280px]" />
           </div>
