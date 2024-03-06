@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     title,
     description,
     siteName: title,
-    images: "/images/open-graph-fudi.png",
+    images: "https://fudi-mahfudin.github.io/images/open-graph-fudi.png",
   },
   icons: {
     icon: "/favicon.ico",
