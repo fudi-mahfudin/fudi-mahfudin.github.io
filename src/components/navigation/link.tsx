@@ -28,10 +28,11 @@ const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(
         target={externalLink ? "_blank" : "_self"}
         ref={ref}
         className={mergeClasses(
-          noCustomization ??
+          noCustomization &&
             "text-base font-medium text-gray-600 transition-all hover:text-gray-900 active:text-gray-600",
           withUnderline &&
-            "underline underline-offset-4 transition-all hover:text-gray-900 active:text-gray-600"
+            "underline underline-offset-4 transition-all hover:text-gray-900 active:text-gray-600",
+          className
         )}
       >
         {children}

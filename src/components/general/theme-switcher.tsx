@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
-import { MoonStar, Sun } from "lucide-react";
+import { MoonStar, Sun, SunMoon } from "lucide-react";
 import IconButton from "./icon-button";
 
 const ThemeSwitcher = () => {
@@ -21,7 +21,7 @@ const ThemeSwitcher = () => {
   if (!mounted) {
     return (
       <IconButton>
-        <Sun />
+        <SunMoon />
       </IconButton>
     );
   }

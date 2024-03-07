@@ -61,6 +61,9 @@ const Header = () => {
             <DownloadCV />
           </div>
         </div>
+        <div className="flex md:hidden ml-auto mr-6">
+          <ThemeSwitcher />
+        </div>
 
         <Drawer open={isOpen} onOpenChange={setIsOpen}>
           <DrawerTrigger asChild className="flex md:hidden">

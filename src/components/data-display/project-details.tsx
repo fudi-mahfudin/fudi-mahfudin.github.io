@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Github } from "lucide-react";
 import { ProjectDetails as ProjectDetailsType } from "@/lib/types";
 import { mergeClasses } from "@/lib/utils";
 import Card from "../layout/card";
@@ -17,6 +17,7 @@ const ProjectDetails = ({
   description,
   technologies,
   url,
+  githubUrl,
   previewImage,
   layoutType = "default",
 }: Props) => {
@@ -31,7 +32,7 @@ const ProjectDetails = ({
             : "md:order-last md:rounded-r-xl md:border-l"
         )}
       >
-        <Link noCustomization href={url} externalLink>
+        <Link noCustomization href={url || githubUrl || "#"} externalLink>
           <Image
             src={previewImage}
             alt={`${name} preview`}
@@ -57,14 +58,28 @@ const ProjectDetails = ({
             <Tag label={tech} className="px-2" key={index} />
           ))}
         </div>
-        <Link
-          href={url}
-          noCustomization
-          className="self-start rounded-lg p-1.5 hover:bg-gray-50 [&_svg]:stroke-gray-500"
-          externalLink
-        >
-          <ExternalLink />
-        </Link>
+        <div className="flex flex-row gap-6">
+          {url && (
+            <Link
+              href={url}
+              noCustomization
+              className="self-start rounded-lg p-1.5 hover:bg-gray-100 [&_svg]:stroke-gray-500"
+              externalLink
+            >
+              <ExternalLink />
+            </Link>
+          )}
+          {githubUrl && (
+            <Link
+              href={githubUrl}
+              noCustomization
+              className="rounded-lg p-1.5 hover:bg-gray-100 [&_svg]:stroke-gray-500"
+              externalLink
+            >
+              <Github />
+            </Link>
+          )}
+        </div>
       </div>
     </Card>
   );

@@ -35,14 +35,14 @@ export const NAV_LINKS = [
 
 export const EXTERNAL_LINKS = {
   GITHUB: "https://github.com/fudi-mahfudin",
-  GITHUB_REPO: "https://github.com/fudi-mahfudin/mahfudin.dev",
-  FIGMA: "https://www.figma.com/@fudi-mahfudin",
+  GITHUB_REPO: "https://github.com/fudi-mahfudin/fudi-mahfudin.github.io",
+  FIGMA: "https://www.figma.com/@mahfudin",
 };
 
 export const SOCIAL_LINKS = [
   { icon: Github, url: "https://github.com/fudi-mahfudin" },
-  { icon: Linkedin, url: "https://github.com/fudi-mahfudin" },
-  { icon: Figma, url: "https://github.com/fudi-mahfudin" },
+  { icon: Linkedin, url: "https://linkedin.com/in/fudi-mahfudin" },
+  { icon: Figma, url: "https://www.figma.com/@mahfudin" },
 ];
 
 export const TECHNOLOGIES: TechDetails[] = [
@@ -205,6 +205,7 @@ export const PROJECTS: ProjectDetails[] = [
     description:
       "A web application using ReactJS to share photos, like the posts and follow each other, a kind of mini Instagram.",
     url: "https://socialgram-fudi.vercel.app",
+    githubUrl: "https://github.com/fudi-mahfudin/socialgram",
     previewImage: ProjectSocialgram,
     technologies: [
       "React",
@@ -220,7 +221,8 @@ export const PROJECTS: ProjectDetails[] = [
     name: "MovieDB",
     description:
       "A mobile application using React Native to fetch and search the latest movies in the world from TMDB (third-party API).",
-    url: "https://github.com/fudi-mahfudin/movie-mobile",
+    // url: "https://github.com/fudi-mahfudin/movie-mobile",
+    githubUrl: "https://github.com/fudi-mahfudin/movie-mobile",
     previewImage: ProjectMovie,
     technologies: [
       "React Native",
@@ -234,6 +236,7 @@ export const PROJECTS: ProjectDetails[] = [
     name: "Admin Dashboard",
     description: `This is a React with Refine framework of an enterprise-grade internal tool example for "CRM Dashboard".`,
     url: "https://admin-refine.vercel.app",
+    githubUrl: "https://github.com/fudi-mahfudin/admin-refine",
     previewImage: ProjectAdmin,
     technologies: ["React", "Refine", "TypeScript", "Ant Design", "GraphQL"],
   },
