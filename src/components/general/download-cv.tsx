@@ -1,13 +1,14 @@
-"use client";
+'use client';
 
-import Button from "./button";
+import Link from 'next/link';
+import Button from './button';
 
 const DownloadCV = () => {
   return (
-    <Button
-      onClick={() => window?.open("/files/mahfudin-cv-2024.pdf", "_blank")}
-    >
-      Download CV
+    <Button asChild>
+      <Link href="/cv" target="_blank">
+        Download CV
+      </Link>
     </Button>
   );
 };

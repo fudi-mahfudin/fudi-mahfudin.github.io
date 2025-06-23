@@ -17,11 +17,17 @@ import {
 } from "../navigation/drawer";
 import IconButton from "../general/icon-button";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
+import BrandLogo from "/public/images/brand-logo.svg";
 
 const Logo = () => (
-  <Typography variant="h3" className="font-bold">
-    {"<MF />"}
-  </Typography>
+  <Image
+    src={BrandLogo}
+    alt="Fudi Logo"
+    width={100}
+    height={100}
+    className="dark:invert"
+  />
 );
 
 const Header = () => {

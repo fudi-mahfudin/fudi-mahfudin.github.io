@@ -1,243 +1,242 @@
-import { Figma, Github, Linkedin } from "lucide-react";
-import { ExperienceDetails, ProjectDetails, TechDetails } from "./types";
+import { Figma, Github, Linkedin } from 'lucide-react';
+import { ExperienceDetails, ProjectDetails, TechDetails } from './types';
 
-import LogoJavascript from "/public/images/logos/icon-javascript.svg";
-import LogoTypescript from "/public/images/logos/icon-typescript.svg";
-import LogoReact from "/public/images/logos/icon-reactjs.svg";
-import LogoNextjs from "/public/images/logos/icon-nextjs.svg";
-import LogoReactnative from "/public/images/logos/icon-reactnative.svg";
-import LogoRedux from "/public/images/logos/icon-redux.svg";
-import LogoJest from "/public/images/logos/icon-jest.svg";
-import LogoGit from "/public/images/logos/icon-git.svg";
-import LogoHtml from "/public/images/logos/icon-html.svg";
-import LogoCss from "/public/images/logos/icon-css.svg";
-import LogoSass from "/public/images/logos/icon-sass.svg";
-import LogoBootstrap from "/public/images/logos/icon-bootstrap.svg";
-import LogoTailwindcss from "/public/images/logos/icon-tailwindcss.svg";
-import LogoMongodb from "/public/images/logos/icon-mongodb.svg";
-import LogoPostgresql from "/public/images/logos/icon-postgresql.svg";
-import LogoFigma from "/public/images/logos/icon-figma.svg";
+import LogoJavascript from '/public/images/logos/icon-javascript.svg';
+import LogoTypescript from '/public/images/logos/icon-typescript.svg';
+import LogoReact from '/public/images/logos/icon-reactjs.svg';
+import LogoNextjs from '/public/images/logos/icon-nextjs.svg';
+import LogoReactnative from '/public/images/logos/icon-reactnative.svg';
+import LogoRedux from '/public/images/logos/icon-redux.svg';
+import LogoJest from '/public/images/logos/icon-jest.svg';
+import LogoGit from '/public/images/logos/icon-git.svg';
+import LogoHtml from '/public/images/logos/icon-html.svg';
+import LogoCss from '/public/images/logos/icon-css.svg';
+import LogoSass from '/public/images/logos/icon-sass.svg';
+import LogoBootstrap from '/public/images/logos/icon-bootstrap.svg';
+import LogoTailwindcss from '/public/images/logos/icon-tailwindcss.svg';
+import LogoPhp from '/public/images/logos/icon-php.svg';
+import LogoLaravel from '/public/images/logos/icon-laravel.svg';
+import LogoCopilot from '/public/images/logos/icon-copilot.svg';
+import LogoMongodb from '/public/images/logos/icon-mongodb.svg';
+import LogoPostgresql from '/public/images/logos/icon-postgresql.svg';
+import LogoFigma from '/public/images/logos/icon-figma.svg';
 
-import CompanyCrd from "/public/images/company-crd.png";
-import CompanyOphir from "/public/images/company-ophir.png";
-import CompanyEnesis from "/public/images/company-enesis.png";
+import CompanyCrd from '/public/images/company-crd.png';
+import CompanyOphir from '/public/images/company-ophir.png';
+import CompanyEnesis from '/public/images/company-enesis.png';
+import CompanyJuke from '/public/images/company-juke.jpeg';
 
-import ProjectSocialgram from "/public/images/project-socialgram.png";
-import ProjectMovie from "/public/images/project-movie.png";
-import ProjectAdmin from "/public/images/project-admin.png";
+import ProjectSocialgram from '/public/images/project-socialgram.png';
+import ProjectMovie from '/public/images/project-movie.png';
+import ProjectAdmin from '/public/images/project-admin.png';
 
 export const NAV_LINKS = [
-  { label: "About", href: "#about" },
-  { label: "Experience", href: "#experience" },
-  { label: "Work", href: "#work" },
-  { label: "Contact", href: "#contact" },
+  { label: 'About', href: '#about' },
+  { label: 'Experience', href: '#experience' },
+  { label: 'Work', href: '#work' },
+  { label: 'Contact', href: '#contact' },
 ];
 
+export const CV_URL =
+  'https://drive.google.com/file/d/1r6o60UGqWqmixusSzOvdxU1vRBLOrJQE/view';
+
+export const HERO = {
+  title: "Hi, I'm Fudi",
+  description:
+    'A results-oriented Developer experienced in building and optimizing user-centric web applications. Expertise in translating UI/UX design into pixel-perfect, high-quality, reusable code. A collaborative team proficient in modern technology stacks including React, React Native, and Laravel, leveraging AI tools to optimize code and accelerate development workflows.',
+  location: 'Jakarta, ID',
+  available: true,
+};
+
 export const EXTERNAL_LINKS = {
-  GITHUB: "https://github.com/fudi-mahfudin",
-  GITHUB_REPO: "https://github.com/fudi-mahfudin/fudi-mahfudin.github.io",
-  FIGMA: "https://www.figma.com/@mahfudin",
+  GITHUB: 'https://github.com/fudi-mahfudin',
+  GITHUB_REPO: 'https://github.com/fudi-mahfudin/fudi-mahfudin.github.io',
+  FIGMA: 'https://www.figma.com/@mahfudin',
 };
 
 export const SOCIAL_LINKS = [
-  { icon: Github, url: "https://github.com/fudi-mahfudin" },
-  { icon: Linkedin, url: "https://linkedin.com/in/fudi-mahfudin" },
-  { icon: Figma, url: "https://www.figma.com/@mahfudin" },
+  { icon: Github, url: 'https://github.com/fudi-mahfudin' },
+  { icon: Linkedin, url: 'https://linkedin.com/in/fudi-mahfudin' },
+  { icon: Figma, url: 'https://www.figma.com/@mahfudin' },
 ];
 
 export const TECHNOLOGIES: TechDetails[] = [
   {
-    label: "JavaScript",
+    label: 'JavaScript',
     logo: LogoJavascript,
-    url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
   },
   {
-    label: "TypeScript",
+    label: 'TypeScript',
     logo: LogoTypescript,
-    url: "https://www.typescriptlang.org",
+    url: 'https://www.typescriptlang.org',
   },
+  { label: 'React', logo: LogoReact, url: 'https://react.dev' },
+  { label: 'Next.js', logo: LogoNextjs, url: 'https://nextjs.org' },
   {
-    label: "React",
-    logo: LogoReact,
-    url: "https://react.dev",
-  },
-  {
-    label: "Next.js",
-    logo: LogoNextjs,
-    url: "https://nextjs.org",
-  },
-  {
-    label: "React Native",
+    label: 'React Native',
     logo: LogoReactnative,
-    url: "https://reactnative.dev",
+    url: 'https://reactnative.dev',
   },
+  { label: 'Redux', logo: LogoRedux, url: 'https://react-redux.js.org' },
   {
-    label: "Redux",
-    logo: LogoRedux,
-    url: "https://react-redux.js.org",
-  },
-  {
-    label: "Jest",
-    logo: LogoJest,
-    url: "https://jestjs.io",
-  },
-  {
-    label: "Git",
-    logo: LogoGit,
-    url: "https://git-scm.com",
-  },
-  {
-    label: "HTML",
+    label: 'HTML',
     logo: LogoHtml,
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+    url: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
   },
   {
-    label: "CSS",
+    label: 'CSS',
     logo: LogoCss,
-    url: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    url: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
   },
+  { label: 'Sass/Scss', logo: LogoSass, url: 'https://sass-lang.com' },
   {
-    label: "Sass/Scss",
-    logo: LogoSass,
-    url: "https://sass-lang.com",
-  },
-  {
-    label: "Bootstrap",
-    logo: LogoBootstrap,
-    url: "https://getbootstrap.com",
-  },
-  {
-    label: "Tailwindcss",
+    label: 'Tailwindcss',
     logo: LogoTailwindcss,
-    url: "https://tailwindcss.com",
+    url: 'https://tailwindcss.com',
   },
+  { label: 'Bootstrap', logo: LogoBootstrap, url: 'https://getbootstrap.com' },
+  { label: 'PHP', logo: LogoPhp, url: 'https://www.php.net' },
+  { label: 'Laravel', logo: LogoLaravel, url: 'https://laravel.com' },
   {
-    label: "MongoDB",
-    logo: LogoMongodb,
-    url: "https://www.mongodb.com",
-  },
-  {
-    label: "PostgreSQL",
+    label: 'PostgreSQL',
     logo: LogoPostgresql,
-    url: "https://www.postgresql.org",
+    url: 'https://www.postgresql.org',
   },
+  { label: 'Git', logo: LogoGit, url: 'https://git-scm.com' },
   {
-    label: "Figma",
-    logo: LogoFigma,
-    url: "https://www.figma.com",
+    label: 'Github Copilot',
+    logo: LogoCopilot,
+    url: 'https://github.com/features/copilot',
   },
 ];
 
 export const EXPERIENCES: ExperienceDetails[] = [
   {
+    logo: CompanyJuke,
+    company: 'Juke Solusi Teknologi',
+    position: 'Frontend Developer',
+    startDate: new Date(2024, 3),
+    endDate: new Date(2025, 1),
+    summary: [
+      'Enhanced user interface and experience by translating UI/UX designs into responsive code using React Native.',
+      'Collaborated with clients to identify requirements and deliver effective technical solutions.',
+      'Teamed up with fellow developers to debug and implement complex application functionalities.',
+    ],
+    technologies: [
+      'Javascript',
+      'React Native',
+      'React Native Paper',
+      'HTML',
+      'CSS',
+    ],
+  },
+  {
     logo: CompanyCrd,
-    company: "Corporate Room Deal (MG Holiday Group)",
-    position: "Software Engineer",
+    company: 'Corporate Room Deal (MG Holiday Group)',
+    position: 'Web Developer',
     startDate: new Date(2019, 10),
     endDate: new Date(2023, 3),
     summary: [
-      "Managed CRD system for hotel searchign and booking used by more than 1000 companies.",
-      "Managed micro-services system, namely adding new feature, bug-fix and optimization.",
-      "Led the efforts to make responsive interface.",
-      "Contributed in system migration using Phased migration strategy.",
+      'Developed reusable, modular code for the front-end (React.js) and back-end (Express), increasing development speed.',
+      'Maintained robust microservices for a high-traffic hotel search and booking platform.',
+      'Led the implementation of UI/UX designs, resulting in a more intuitive and engaging user interface.',
+      'Collaborates in a major system migration, utilizing a phased strategy to ensure a seamless transition with minimal downtime.',
     ],
     technologies: [
-      "NodeJS",
-      "ReactJS",
-      "Javascript",
-      "HTML",
-      "CSS",
-      "Material UI",
-      "Bootstrap",
-      "MongoDB",
+      'NodeJS',
+      'ReactJS',
+      'Javascript',
+      'Typescript',
+      'HTML',
+      'CSS',
+      'Material UI',
+      'Bootstrap',
+      'MongoDB',
     ],
   },
   {
     logo: CompanyOphir,
-    company: "Ophir Indonesia",
-    position: "Software Developer",
+    company: 'Ophir Indonesia',
+    position: 'Web Developer',
     startDate: new Date(2018, 11),
     endDate: new Date(2019, 10),
     summary: [
-      "Developed Inspection report system for generating reports with multi-level approval.",
-      "Identified system requirements.",
-      "Designed the system, namely UI, database, and technology.",
-      "Built a web application and tested using end-to-end.",
-      "Deployed system to server.",
+      'Designed and developed a full-scale web application for generating and managing asset inspection reports from the ground up.',
+      'Partnered with the Asset Integrity team to define the complete system architecture, including UI, database structure, and technology stack (Laravel).',
+      'Deployed and managed the application on an on-premise server, ensuring system robustness and reliability.',
     ],
     technologies: [
-      "PHP",
-      "Laravel",
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "Bootstrap",
-      "SQL Server",
+      'PHP',
+      'Laravel',
+      'HTML',
+      'CSS',
+      'JavaScript',
+      'Bootstrap',
+      'SQL Server',
     ],
   },
   {
     logo: CompanyEnesis,
-    company: "Enesis Group",
-    position: "Software Developer Intern",
+    company: 'Enesis Group',
+    position: 'Web Developer (Intern)',
     startDate: new Date(2018, 11),
     endDate: new Date(2018, 6),
     summary: [
-      "Developed Employee assessment system for 360-degree reviewing using by more than  500 employees.",
-      "Designed the system, namely UI, database, and technology.",
-      "Built a web application and tested using end-to-end.",
-      "Deployed system to server.",
+      'Developed a web application for employee 360-degree reviews, successfully integrating it with existing HR systems.',
+      'Gained hands-on experience with the Laravel framework, end-to-end testing, and collaboration with non-technical stakeholders.',
     ],
     technologies: [
-      "PHP",
-      "Laravel",
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "Bootstrap",
-      "PostgreSQL",
+      'PHP',
+      'Laravel',
+      'HTML',
+      'CSS',
+      'JavaScript',
+      'Bootstrap',
+      'PostgreSQL',
     ],
   },
 ];
 
 export const PROJECTS: ProjectDetails[] = [
   {
-    name: "Socialgram",
+    name: 'Socialgram',
     description:
-      "A web application using ReactJS to share photos, like the posts and follow each other, a kind of mini Instagram.",
-    url: "https://socialgram-fudi.vercel.app",
-    githubUrl: "https://github.com/fudi-mahfudin/socialgram",
+      'A web application using ReactJS to share photos, like the posts and follow each other, a kind of mini Instagram.',
+    url: 'https://socialgram-fudi.vercel.app',
+    githubUrl: 'https://github.com/fudi-mahfudin/socialgram',
     previewImage: ProjectSocialgram,
     technologies: [
-      "React",
-      "TypeScript",
-      "Tailwindcss",
-      "React Query",
-      "Shadcn/ui",
-      "Zod",
-      "Dropzone",
+      'React',
+      'TypeScript',
+      'Tailwindcss',
+      'React Query',
+      'Shadcn/ui',
+      'Zod',
+      'Dropzone',
     ],
   },
   {
-    name: "MovieDB",
+    name: 'MovieDB',
     description:
-      "A mobile application using React Native to fetch and search the latest movies in the world from TMDB (third-party API).",
+      'A mobile application using React Native to fetch and search the latest movies in the world from TMDB (third-party API).',
     // url: "https://github.com/fudi-mahfudin/movie-mobile",
-    githubUrl: "https://github.com/fudi-mahfudin/movie-mobile",
+    githubUrl: 'https://github.com/fudi-mahfudin/movie-mobile',
     previewImage: ProjectMovie,
     technologies: [
-      "React Native",
-      "Expo",
-      "TypeScript",
-      "Tailwindcss",
-      "React Navigation",
+      'React Native',
+      'Expo',
+      'TypeScript',
+      'Tailwindcss',
+      'React Navigation',
     ],
   },
   {
-    name: "Admin Dashboard",
+    name: 'Admin Dashboard',
     description: `This is a React with Refine framework of an enterprise-grade internal tool example for "CRM Dashboard".`,
-    url: "https://admin-refine.vercel.app",
-    githubUrl: "https://github.com/fudi-mahfudin/admin-refine",
+    url: 'https://admin-refine.vercel.app',
+    githubUrl: 'https://github.com/fudi-mahfudin/admin-refine',
     previewImage: ProjectAdmin,
-    technologies: ["React", "Refine", "TypeScript", "Ant Design", "GraphQL"],
+    technologies: ['React', 'Refine', 'TypeScript', 'Ant Design', 'GraphQL'],
   },
 ];
