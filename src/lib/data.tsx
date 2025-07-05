@@ -20,13 +20,16 @@ import LogoCopilot from '/public/images/logos/icon-copilot.svg';
 import LogoMongodb from '/public/images/logos/icon-mongodb.svg';
 import LogoPostgresql from '/public/images/logos/icon-postgresql.svg';
 import LogoFigma from '/public/images/logos/icon-figma.svg';
+import LogoPrisma from '/public/images/logos/icon-prisma.svg';
+import LogoShadcn from '/public/images/logos/icon-shadcn.svg';
+import LogoZod from '/public/images/logos/icon-zod.svg';
 
 import CompanyCrd from '/public/images/company-crd.png';
 import CompanyOphir from '/public/images/company-ophir.png';
 import CompanyEnesis from '/public/images/company-enesis.png';
 import CompanyJuke from '/public/images/company-juke.jpeg';
 
-import ProjectSocialgram from '/public/images/project-socialgram.png';
+import ProjectPetsoft from '/public/images/project-petsoft.png';
 import ProjectMovie from '/public/images/project-movie.png';
 import ProjectAdmin from '/public/images/project-admin.png';
 
@@ -43,7 +46,7 @@ export const CV_URL =
 export const HERO = {
   title: "Hi, I'm Fudi",
   description:
-    'A results-oriented Developer experienced in building and optimizing user-centric web applications. Expertise in translating UI/UX design into pixel-perfect, high-quality, reusable code. A collaborative team proficient in modern technology stacks including React, React Native, and Laravel, leveraging AI tools to optimize code and accelerate development workflows.',
+    'A results-oriented Developer experienced in building and optimizing user-centric web applications. Expertise in translating UI/UX design into pixel-perfect, high-quality, reusable code. A collaborative team proficient in modern technology stacks including Next.js, React Native, and Laravel, leveraging AI tools to optimize code and accelerate development workflows.',
   location: 'Jakarta, ID',
   available: true,
 };
@@ -71,8 +74,8 @@ export const TECHNOLOGIES: TechDetails[] = [
     logo: LogoTypescript,
     url: 'https://www.typescriptlang.org',
   },
-  { label: 'React', logo: LogoReact, url: 'https://react.dev' },
   { label: 'Next.js', logo: LogoNextjs, url: 'https://nextjs.org' },
+  { label: 'React', logo: LogoReact, url: 'https://react.dev' },
   {
     label: 'React Native',
     logo: LogoReactnative,
@@ -89,14 +92,16 @@ export const TECHNOLOGIES: TechDetails[] = [
     logo: LogoCss,
     url: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
   },
-  { label: 'Sass/Scss', logo: LogoSass, url: 'https://sass-lang.com' },
+  // { label: 'Sass/Scss', logo: LogoSass, url: 'https://sass-lang.com' },
+  // { label: 'Bootstrap', logo: LogoBootstrap, url: 'https://getbootstrap.com' },
   {
     label: 'Tailwindcss',
     logo: LogoTailwindcss,
     url: 'https://tailwindcss.com',
   },
-  { label: 'Bootstrap', logo: LogoBootstrap, url: 'https://getbootstrap.com' },
-  { label: 'PHP', logo: LogoPhp, url: 'https://www.php.net' },
+  { label: 'Shadcn/uiicon', logo: LogoShadcn, url: 'https://ui.shadcn.com' },
+  { label: 'Zod', logo: LogoZod, url: 'https://zod.dev/' },
+  { label: 'Prisma ORM', logo: LogoPrisma, url: 'https://prisma.io' },
   { label: 'Laravel', logo: LogoLaravel, url: 'https://laravel.com' },
   {
     label: 'PostgreSQL',
@@ -200,20 +205,28 @@ export const EXPERIENCES: ExperienceDetails[] = [
 
 export const PROJECTS: ProjectDetails[] = [
   {
-    name: 'Socialgram',
-    description:
-      'A web application using ReactJS to share photos, like the posts and follow each other, a kind of mini Instagram.',
-    url: 'https://socialgram-fudi.vercel.app',
-    githubUrl: 'https://github.com/fudi-mahfudin/socialgram',
-    previewImage: ProjectSocialgram,
+    name: 'PetSoft',
+    description: `
+* **Full-Stack Next.js Architecture:** Built a scalable application using Next.js for Server-Side Rendering (SSR), API routes, and middleware-based route protection.
+* **Modern, Component-Driven UI:** Developed a responsive and reusable UI with **React**, **Tailwind CSS**, and **Shadcn-ui** for a polished user experience.
+* **Optimistic UI for Advanced Forms:** Implemented **Next.js Server Actions** with *useOptimistic* and *useTransition* to create non-blocking forms with instant user feedback.
+* **End-to-End Type Safety:** Guaranteed data integrity from the database to the frontend using **TypeScript**, **Prisma ORM**, and **Zod** for schema validation.
+* **Secure JWT Authentication:** Engineered a robust, credential-based authentication system with **Next-Auth**, securing user sessions and protected routes with JSON Web Tokens.
+* **Reliable Stripe Payment Integration:** Managed the complete payment lifecycle, including a secure and webhook handler for real-time, reliable event processing like order confirmations.
+    `,
+    url: 'https://fudi-petsoft.vercel.app',
+    githubUrl: 'https://github.com/fudi-mahfudin/petsoft',
+    previewImage: ProjectPetsoft,
     technologies: [
+      'Next.js',
       'React',
       'TypeScript',
       'Tailwindcss',
-      'React Query',
       'Shadcn/ui',
       'Zod',
-      'Dropzone',
+      'Prisma ORM',
+      'Stripe',
+      'Next-Auth',
     ],
   },
   {
