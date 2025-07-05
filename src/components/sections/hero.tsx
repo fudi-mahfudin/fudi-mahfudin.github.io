@@ -6,6 +6,7 @@ import SocialIcons from '../data-display/social-icons';
 import HeroHeadshot from '/public/images/hero-headshot.jpg';
 import { HERO } from '@/lib/data';
 import { mergeClasses } from '@/lib/utils';
+import Markdown from 'react-markdown';
 
 const HeroSection = () => {
   return (
@@ -17,11 +18,11 @@ const HeroSection = () => {
             <Image
               src={HeroHeadshot}
               alt="Headshot of Fudi"
-              className="absolute z-10 h-[280px] w-[240px] border-8 border-gray max-md-:left-5 md:left-0 md:top-0 md:h-[320px] md:w-[280px]"
+              className="absolute z-10 h-[280px] w-[240px] border-8 border-gray max-md-:left-5 md:left-0 md:top-0 md:h-[320px] md:w-[280px] rounded-3xl"
               style={{ objectFit: 'cover' }}
               priority
             />
-            <div className="absolute h-[280px] w-[280px] border-8 border-transparent bg-gray-200 max-md:top-5 md:bottom-0 md:right-0 md:h-[320px] md:w-[280px]" />
+            <div className="absolute h-[280px] w-[280px] border-8 border-transparent bg-gray-200 max-md:top-5 md:bottom-0 md:right-0 md:h-[320px] md:w-[280px] rounded-xl" />
           </div>
         </div>
         {/* Content */}
@@ -31,7 +32,7 @@ const HeroSection = () => {
               {HERO.title}{' '}
               <span className="inline-block animate-waving-hand">👋</span>
             </Typography>
-            <Typography>{HERO.description}</Typography>
+            <Markdown>{HERO.description}</Markdown>
           </div>
           <div className="flex flex-col gap-2">
             <div className="flex gap-2">

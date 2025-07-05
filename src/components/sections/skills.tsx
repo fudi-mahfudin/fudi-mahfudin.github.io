@@ -7,7 +7,7 @@ import TechDetails from "../data-display/tech-details";
 
 const SkillSection = () => {
   return (
-    <Container>
+    <Container className="bg-gray-50">
       <div className="flex flex-col items-center gap-4">
         <div className="self-center">
           <Tag label="Skills" />

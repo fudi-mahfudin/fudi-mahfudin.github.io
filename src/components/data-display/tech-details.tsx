@@ -1,8 +1,8 @@
-import { TechDetails as Props } from "@/lib/types";
-import React from "react";
-import Link from "../navigation/link";
-import ImageWrapper from "./image-wrapper";
-import Typography from "../general/typography";
+import { TechDetails as Props } from '@/lib/types';
+import React from 'react';
+import Link from '../navigation/link';
+import ImageWrapper from './image-wrapper';
+import Typography from '../general/typography';
 
 const TechDetails = ({ url, logo, darkModeLogo, label }: Props) => {
   return (

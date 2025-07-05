@@ -55,7 +55,7 @@ const ProjectDetails = ({
           {name}
         </Typography>
 
-        <div className="prose">
+        <div className="prose dark:prose-invert">
           <Markdown remarkPlugins={[remarkGfm]}>{description}</Markdown>
         </div>
         {/* <Typography>{description}</Typography> */}
@@ -64,12 +64,12 @@ const ProjectDetails = ({
             <Tag label={tech} className="px-2" key={index} />
           ))}
         </div>
-        <div className="flex flex-row gap-6">
+        <div className="flex flex-row gap-6 order-first md:order-last">
           {url && (
             <Link
               href={url}
               noCustomization
-              className="flex items-center gap-2 self-start rounded-lg p-1.5 text-white bg-teal-500 hover:text-white hover:bg-teal-600 [&_svg]:stroke-white"
+              className="flex items-center gap-2 self-start rounded-lg p-1.5 text-white bg-emerald-500 hover:text-white hover:bg-emerald-600 [&_svg]:stroke-white"
               externalLink
             >
               Preview <ExternalLink />
@@ -79,10 +79,10 @@ const ProjectDetails = ({
             <Link
               href={githubUrl}
               noCustomization
-              className="rounded-lg p-1.5 hover:bg-gray-100 [&_svg]:stroke-gray-500"
+              className="flex items-center gap-2 self-start rounded-lg p-1.5 hover:bg-gray-100 [&_svg]:stroke-gray-500 ring-gray-200 ring-2"
               externalLink
             >
-              <Github />
+              Code <Github />
             </Link>
           )}
         </div>

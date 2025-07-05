@@ -35,8 +35,8 @@ import ProjectAdmin from '/public/images/project-admin.png';
 
 export const NAV_LINKS = [
   { label: 'About', href: '#about' },
-  { label: 'Experience', href: '#experience' },
-  { label: 'Work', href: '#work' },
+  // { label: 'Experience', href: '#experience' },
+  { label: 'Portfolio', href: '#portfolio' },
   { label: 'Contact', href: '#contact' },
 ];
 
@@ -46,7 +46,7 @@ export const CV_URL =
 export const HERO = {
   title: "Hi, I'm Fudi",
   description:
-    'A results-oriented Developer experienced in building and optimizing user-centric web applications. Expertise in translating UI/UX design into pixel-perfect, high-quality, reusable code. A collaborative team proficient in modern technology stacks including Next.js, React Native, and Laravel, leveraging AI tools to optimize code and accelerate development workflows.',
+    'A results-oriented **Developer** experienced in building and optimizing *user-centric web applications*. Expertise in translating UI/UX design into pixel-perfect, high-quality, reusable code. A collaborative team proficient in modern technology stacks including **Next.js**, **React Native**, and **Laravel**, leveraging **AI tools** to optimize code and accelerate development workflows.',
   location: 'Jakarta, ID',
   available: true,
 };
@@ -207,12 +207,11 @@ export const PROJECTS: ProjectDetails[] = [
   {
     name: 'PetSoft',
     description: `
-* **Full-Stack Next.js Architecture:** Built a scalable application using Next.js for Server-Side Rendering (SSR), API routes, and middleware-based route protection.
-* **Modern, Component-Driven UI:** Developed a responsive and reusable UI with **React**, **Tailwind CSS**, and **Shadcn-ui** for a polished user experience.
-* **Optimistic UI for Advanced Forms:** Implemented **Next.js Server Actions** with *useOptimistic* and *useTransition* to create non-blocking forms with instant user feedback.
-* **End-to-End Type Safety:** Guaranteed data integrity from the database to the frontend using **TypeScript**, **Prisma ORM**, and **Zod** for schema validation.
-* **Secure JWT Authentication:** Engineered a robust, credential-based authentication system with **Next-Auth**, securing user sessions and protected routes with JSON Web Tokens.
-* **Reliable Stripe Payment Integration:** Managed the complete payment lifecycle, including a secure and webhook handler for real-time, reliable event processing like order confirmations.
+* **Full-Stack Next.js Architecture:** Built a scalable application and SEO-friendly using Next.js for Server-Side Rendering (SSR), Server Actions and API routes.
+* **Modern, Component-Driven UI:** Developed a responsive and reusable UI with *React*, *Tailwind CSS* for a polished user experience.
+* **End-to-End Type Safety:** Guaranteed data integrity from the database to the frontend using *TypeScript*, *Prisma ORM*, and *Zod* for schema validation.
+* **Secure JWT Authentication:** Engineered a robust, credential-based authentication system with *Next-Auth*.
+* **Reliable Payment Integration:** Managed payment lifecycle, including a *webhook handler* for real-time events.
     `,
     url: 'https://fudi-petsoft.vercel.app',
     githubUrl: 'https://github.com/fudi-mahfudin/petsoft',
