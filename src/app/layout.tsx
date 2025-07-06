@@ -7,15 +7,15 @@ import Footer from "@/components/layout/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const title = "Mahfudin Fudi | Web Developer From Jakarta, ID.";
+const title = "Mahfudin Fudi | Full Stack Developer From Jakarta, ID.";
 const description =
-  "A self-praclaimed designer who specializes in frontend development (React.js), from Jakarta, ID";
+  "A collaborative Developer specializing in user-centric applications. Expertise in Next.js, React Native, Laravel, and AI-powered to optimize code and accelerate development workflows.";
 const url = "https://fudi-mahfudin.github.io";
 
 export const metadata: Metadata = {
   title,
   description,
-  keywords: ["Frontend Developer", "React Developer", "Next.js Developer"],
+  keywords: ["Full Stack Developer", "Next.js", "React Native", "Laravel"],
   creator: "Mahfudin Fudi",
   openGraph: {
     type: "website",

@@ -99,7 +99,7 @@ export const TECHNOLOGIES: TechDetails[] = [
     logo: LogoTailwindcss,
     url: 'https://tailwindcss.com',
   },
-  { label: 'Shadcn/uiicon', logo: LogoShadcn, url: 'https://ui.shadcn.com' },
+  { label: 'Shadcn', logo: LogoShadcn, url: 'https://ui.shadcn.com' },
   { label: 'Zod', logo: LogoZod, url: 'https://zod.dev/' },
   { label: 'Prisma ORM', logo: LogoPrisma, url: 'https://prisma.io' },
   { label: 'Laravel', logo: LogoLaravel, url: 'https://laravel.com' },
